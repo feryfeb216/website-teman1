@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semangat Budak Ketot!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="min-h-screen flex items-center justify-center px-4 py-10 font-sans text-gray-800"
+  >
+    <div
+      class="bg-white shadow-2xl rounded-3xl p-8 max-w-xl text-center fade-in"
+    >
+      <h1
+        id="typing"
+        class="text-3xl font-bold text-indigo-600 mb-4 typing"
+      ></h1>
+      <p class="text-lg leading-relaxed mb-6">
+        Hidup memang kadang berat, tapi kamu jauh lebih berat dari yang kamu
+        kira awokawok. Jangan biarkan hari buruk membuatmu lupa betapa luar
+        biasanya dirimu. Terus semangat ya pendek, kamu nggak sendiri! 💖
+      </p>
+      <div
+        class="bg-indigo-100 text-indigo-800 rounded-xl px-6 py-4 text-sm font-medium"
+      >
+        “Langit tetap biru meski tertutup awan. Kamu tetap hebat meski sedang
+        lelah.”
+      </div>
+
+      <div class="mt-6 space-y-4">
+        <button
+          onclick="showMessage()"
+          class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-xl glow"
+        >
+          Klik untuk semangat!
+        </button>
+        <button
+          onclick="showPasswordPrompt()"
+          class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-xl glow"
+        >
+          Buka Pesan Rahasianya pendek
+        </button>
+      </div>
+
+      <!-- Input password -->
+      <div id="password-box" class="mt-6">
+        <input
+          id="password-input"
+          type="password"
+          placeholder="Masukkan password..."
+          class="border rounded-xl px-4 py-2 w-full max-w-sm"
+        />
+        <button
+          onclick="checkPassword()"
+          class="ml-2 mt-2 bg-indigo-600 text-white px-4 py-2 rounded-xl"
+        >
+          Kirim
+        </button>
+        <p id="wrong-pass" class="text-red-500 text-sm mt-2 hidden">
+          Password salah! Coba lagi ya 🥺
+        </p>
+      </div>
+
+      <!-- Pesan rahasia -->
+      <div id="secret-message" class="fade-in">
+        Aku mungkin nggak selalu ada secara fisik, ANJAYYYYY tapi kamu harus
+        tahu: ada seseorang yang percaya sama kamu sepenuhnya. Kamu itu hebat,
+        unik,pendek pulak tu dan pantas bahagia Jangan menyerah ya, Budak Kecik.
+      </div>
+
+      <p class="mt-6 text-sm text-gray-500">
+        Dari seseorang yang peduli padamu
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
